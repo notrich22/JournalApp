@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("JournalApiWebApplication")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("JournalWebApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("JournalApiWebApplication")]
-[assembly: System.Reflection.AssemblyTitleAttribute("JournalApiWebApplication")]
+[assembly: System.Reflection.AssemblyProductAttribute("JournalWebApplication")]
+[assembly: System.Reflection.AssemblyTitleAttribute("JournalWebApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

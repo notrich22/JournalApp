@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LNE6VXhZBdyYhEfX84DtYSMb7r5fKbToFFlnKKjwI7c6ky7eUSvI97ezsi+6FcGxkWVdTPRFSAFCetzZoHOc1g==",
+  "dgSpecHash": "SrgxmArebCTiYSbish3NKp+mBbrfEY0/8bjx2B8JUNOl2zUisPsaVoVwCTzIX511sw6uGK6spErEaiCpy9Ob1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApiWebApplication\\JournalApiWebApplication.csproj",
+  "projectFilePath": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApp\\JournalWebApplication\\JournalWebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NotRich22\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.1\\microsoft.entityframeworkcore.7.0.1.nupkg.sha512",
     "C:\\Users\\NotRich22\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.1\\microsoft.entityframeworkcore.abstractions.7.0.1.nupkg.sha512",

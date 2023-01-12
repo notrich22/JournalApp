@@ -698,11 +698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApiWebApplication\\JournalApiWebApplication.csproj",
-      "projectName": "JournalApiWebApplication",
-      "projectPath": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApiWebApplication\\JournalApiWebApplication.csproj",
+      "projectUniqueName": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApp\\JournalWebApplication\\JournalWebApplication.csproj",
+      "projectName": "JournalWebApplication",
+      "projectPath": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApp\\JournalWebApplication\\JournalWebApplication.csproj",
       "packagesPath": "C:\\Users\\NotRich22\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApiWebApplication\\obj\\",
+      "outputPath": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApp\\JournalWebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NotRich22\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -719,8 +719,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApiApp\\JournalApiApp.csproj": {
-              "projectPath": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApiApp\\JournalApiApp.csproj"
+            "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApp\\JournalApiApp\\JournalApiApp.csproj": {
+              "projectPath": "C:\\Users\\NotRich22\\Desktop\\АКАДЕМИЯ\\ASP DOTNET\\JournalApp\\JournalApp\\JournalApiApp\\JournalApiApp.csproj"
             }
           }
         }
