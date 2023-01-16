@@ -25,13 +25,12 @@ namespace JournalApiApp.Controllers.BusinessLogicControllers
         public async Task ShowSubject(HttpContext context)
         {
             IdData subjectId = await context.Request.ReadFromJsonAsync<IdData>();
-            Subject subject = await logicService.ShowSubject(subjectId.id);
+            Subject subject = await logicService.GetSubject(subjectId.id);
             await context.Response.WriteAsJsonAsync(subject);
         }
-        [Authorize(Roles = "admin")]
         public async Task ShowSubjects(HttpContext context)
         {
-            await context.Response.WriteAsJsonAsync(await logicService.ShowSubjects());
+            await context.Response.WriteAsJsonAsync(await logicService.GetSubjects());
         }
         [Authorize(Roles = "admin")]
         public async Task UpdateSubject(HttpContext context)

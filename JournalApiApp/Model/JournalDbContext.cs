@@ -24,7 +24,7 @@ namespace JournalApiApp.Model
                 .AddJsonFile("appsettings.json")
                 .Build();
             // устанавливаем для контекста строку подключения
-            string connectionStringKey = configuration.GetSection("UseConnection").Value;
+            string connectionStringKey = configuration.GetSection("UseDbConnection").Value;
             option.UseNpgsql(configuration.GetConnectionString(connectionStringKey), options => options.SetPostgresVersion(new Version(9, 6)));
         }
         

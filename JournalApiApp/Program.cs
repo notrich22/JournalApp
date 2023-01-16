@@ -74,7 +74,7 @@ app.MapPost("/deletestudygroup", app.Services.GetRequiredService<StudyGroupsCont
 //Subject CRUD
 app.MapPost("/addsubject", app.Services.GetRequiredService<SubjectsController>().AddSubject);
 app.MapPost("/showsubject", app.Services.GetRequiredService<SubjectsController>().ShowSubject);
-app.Map("/showsubject", app.Services.GetRequiredService<SubjectsController>().ShowSubjects);
+app.Map("/showsubjects", app.Services.GetRequiredService<SubjectsController>().ShowSubjects);
 app.MapPost("/updatesubject", app.Services.GetRequiredService<SubjectsController>().UpdateSubject);
 app.MapPost("/deletesubject", app.Services.GetRequiredService<SubjectsController>().DeleteSubject);
 //User CRUD

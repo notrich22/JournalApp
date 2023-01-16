@@ -1,4 +1,6 @@
-﻿namespace JournalApiApp.Model.Entities.Access
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace JournalApiApp.Model.Entities.Access
 {
     public class User
     {

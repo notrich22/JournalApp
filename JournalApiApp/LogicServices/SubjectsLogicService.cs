@@ -26,7 +26,7 @@ namespace JournalApiApp.LogicServices
                 return null;
             }
         }
-        public async Task<Subject> ShowSubject(int id)
+        public async Task<Subject> GetSubject(int id)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace JournalApiApp.LogicServices
                 return null;
             }
         }
-        public async Task<List<Subject>> ShowSubjects()
+        public async Task<List<Subject>> GetSubjects()
         {
             try
             {
