@@ -46,6 +46,5 @@ public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<Journ
         builder.Property(u => u.Adress).HasMaxLength(256);
         builder.Property(u => u.BirthDate).HasMaxLength(256);
         builder.Property(u => u.PhoneNumber).HasMaxLength(256);
-
     }
 }

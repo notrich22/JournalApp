@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using JournalApiApp.Model;
 using JournalApiApp.Model.Entities.Journal;
 
-namespace JournalWebApplication.Pages
+namespace JournalWebApplication.Pages.StudentsCRUD
 {
     public class EditModel : PageModel
     {
@@ -22,6 +22,10 @@ namespace JournalWebApplication.Pages
 
         [BindProperty]
         public Student Student { get; set; } = default!;
+        [BindProperty]
+        public int StudyGroupId { get; set; } = default!;
+        [BindProperty]
+        public int UserId { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,7 +34,9 @@ namespace JournalWebApplication.Pages
                 return NotFound();
             }
 
-            var student =  await _context.Students.FirstOrDefaultAsync(m => m.Id == id);
+            var student =  await _context.Students.Include(n=>n.StudyGroup).Include(n=>n.User).Include(n => n.User.UserGroup).FirstOrDefaultAsync(m => m.Id == id);
+            StudyGroupId = student.StudyGroup.Id;
+            UserId = student.User.Id;
             if (student == null)
             {
                 return NotFound();
@@ -43,15 +49,17 @@ namespace JournalWebApplication.Pages
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            /*if (!ModelState.IsValid)
             {
                 return Page();
-            }
+            }*/
 
             _context.Attach(Student).State = EntityState.Modified;
 
             try
             {
+                Student.StudyGroup = await _context.StudyGroups.FirstOrDefaultAsync(n => n.Id == StudyGroupId);
+                Student.User = await _context.Users.FirstOrDefaultAsync(n => n.Id == UserId);
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)

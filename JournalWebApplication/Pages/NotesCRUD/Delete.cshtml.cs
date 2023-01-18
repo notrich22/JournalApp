@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using JournalApiApp.Model;
 using JournalApiApp.Model.Entities.Journal;
 
-namespace JournalWebApplication.Pages
+namespace JournalWebApplication.Pages.NotesCRUD
 {
     public class DeleteModel : PageModel
     {
@@ -20,40 +20,40 @@ namespace JournalWebApplication.Pages
         }
 
         [BindProperty]
-      public Student Student { get; set; } = default!;
+      public Note Note { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Students == null)
+            if (id == null || _context.Notes == null)
             {
                 return NotFound();
             }
 
-            var student = await _context.Students.FirstOrDefaultAsync(m => m.Id == id);
+            var note = await _context.Notes.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (student == null)
+            if (note == null)
             {
                 return NotFound();
             }
             else 
             {
-                Student = student;
+                Note = note;
             }
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.Students == null)
+            if (id == null || _context.Notes == null)
             {
                 return NotFound();
             }
-            var student = await _context.Students.FindAsync(id);
+            var note = await _context.Notes.FindAsync(id);
 
-            if (student != null)
+            if (note != null)
             {
-                Student = student;
-                _context.Students.Remove(Student);
+                Note = note;
+                _context.Notes.Remove(Note);
                 await _context.SaveChangesAsync();
             }
 

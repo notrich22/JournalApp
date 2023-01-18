@@ -1,5 +1,5 @@
 ﻿@page
-@model JournalWebApplication.Pages.CreateModel
+@model JournalWebApplication.Pages.StudentsCRUD.CreateModel
 
 @{
     ViewData["Title"] = "Create";
@@ -18,6 +18,14 @@
                 <label asp-for="Student.FullName" class="control-label"></label>
                 <input asp-for="Student.FullName" class="form-control" />
                 <span asp-validation-for="Student.FullName" class="text-danger"></span>
+
+                <label asp-for="StudyGroupId" class="control-label"></label>
+                <input asp-for="StudyGroupId" class="form-control" />
+                <span asp-validation-for="StudyGroupId" class="text-danger"></span>
+
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

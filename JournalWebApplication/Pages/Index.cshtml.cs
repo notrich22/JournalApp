@@ -12,21 +12,9 @@ namespace JournalWebApplication.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly JournalApiApp.Model.JournalDbContext _context;
-
-        public IndexModel(JournalApiApp.Model.JournalDbContext context)
-        {
-            _context = context;
-        }
-
-        public IList<Student> Student { get;set; } = default!;
-
         public async Task OnGetAsync()
         {
-            if (_context.Students != null)
-            {
-                Student = await _context.Students.ToListAsync();
-            }
+
         }
     }
 }

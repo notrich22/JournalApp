@@ -44,28 +44,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/LessonsCRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVzc29uc0NSVURcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/LessonsCRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVzc29uc0NSVURcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/LessonsCRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVzc29uc0NSVURcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/LessonsCRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVzc29uc0NSVURcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/LessonsCRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVzc29uc0NSVURcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/NotesCRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90ZXNDUlVEXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/NotesCRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90ZXNDUlVEXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/NotesCRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90ZXNDUlVEXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/NotesCRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90ZXNDUlVEXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/NotesCRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90ZXNDUlVEXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/Privacy.cshtml]
@@ -78,6 +102,66 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudentsCRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNDUlVEXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudentsCRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNDUlVEXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudentsCRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNDUlVEXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudentsCRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNDUlVEXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudentsCRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNDUlVEXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudyGroupsCRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZHlHcm91cHNDUlVEXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudyGroupsCRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZHlHcm91cHNDUlVEXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudyGroupsCRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZHlHcm91cHNDUlVEXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudyGroupsCRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZHlHcm91cHNDUlVEXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/StudyGroupsCRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZHlHcm91cHNDUlVEXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/SubjectCRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdENSVURcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/SubjectCRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdENSVURcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/SubjectCRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdENSVURcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/SubjectCRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdENSVURcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/SubjectCRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdENSVURcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/NotRich22/Desktop/АКАДЕМИЯ/ASP DOTNET/JournalApp/JournalApp/JournalWebApplication/Pages/_ViewImports.cshtml]

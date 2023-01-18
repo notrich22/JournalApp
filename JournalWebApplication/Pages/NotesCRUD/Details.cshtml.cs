@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using JournalApiApp.Model;
 using JournalApiApp.Model.Entities.Journal;
 
-namespace JournalWebApplication.Pages
+namespace JournalWebApplication.Pages.NotesCRUD
 {
     public class DetailsModel : PageModel
     {
@@ -19,23 +19,23 @@ namespace JournalWebApplication.Pages
             _context = context;
         }
 
-      public Student Student { get; set; } = default!; 
+      public Note Note { get; set; } = default!; 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Students == null)
+            if (id == null || _context.Notes == null)
             {
                 return NotFound();
             }
 
-            var student = await _context.Students.FirstOrDefaultAsync(m => m.Id == id);
-            if (student == null)
+            var note = await _context.Notes.Include(n=>n.Lesson).Include(n=>n.Student).FirstOrDefaultAsync(m => m.Id == id);
+            if (note == null)
             {
                 return NotFound();
             }
             else 
             {
-                Student = student;
+                Note = note;
             }
             return Page();
         }
