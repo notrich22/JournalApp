@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using JournalApiApp.Model;
 using JournalApiApp.Model.Entities.Journal;
 
-namespace JournalWebApplication.Pages
+namespace JournalWebApplication.Pages.StudyGroupsCRUD
 {
     public class CreateModel : PageModel
     {
@@ -25,18 +25,18 @@ namespace JournalWebApplication.Pages
         }
 
         [BindProperty]
-        public Student Student { get; set; } = default!;
+        public StudyGroup StudyGroup { get; set; } = default!;
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Students == null || Student == null)
+          if (!ModelState.IsValid || _context.StudyGroups == null || StudyGroup == null)
             {
                 return Page();
             }
 
-            _context.Students.Add(Student);
+            _context.StudyGroups.Add(StudyGroup);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

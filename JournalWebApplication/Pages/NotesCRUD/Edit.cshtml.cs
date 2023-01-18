@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using JournalApiApp.Model;
 using JournalApiApp.Model.Entities.Journal;
 
-namespace JournalWebApplication.Pages
+namespace JournalWebApplication.Pages.NotesCRUD
 {
     public class EditModel : PageModel
     {
@@ -21,21 +21,21 @@ namespace JournalWebApplication.Pages
         }
 
         [BindProperty]
-        public Student Student { get; set; } = default!;
+        public Note Note { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Students == null)
+            if (id == null || _context.Notes == null)
             {
                 return NotFound();
             }
 
-            var student =  await _context.Students.FirstOrDefaultAsync(m => m.Id == id);
-            if (student == null)
+            var note =  await _context.Notes.FirstOrDefaultAsync(m => m.Id == id);
+            if (note == null)
             {
                 return NotFound();
             }
-            Student = student;
+            Note = note;
             return Page();
         }
 
@@ -48,7 +48,7 @@ namespace JournalWebApplication.Pages
                 return Page();
             }
 
-            _context.Attach(Student).State = EntityState.Modified;
+            _context.Attach(Note).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace JournalWebApplication.Pages
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StudentExists(Student.Id))
+                if (!NoteExists(Note.Id))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace JournalWebApplication.Pages
             return RedirectToPage("./Index");
         }
 
-        private bool StudentExists(int id)
+        private bool NoteExists(int id)
         {
-          return (_context.Students?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Notes?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
