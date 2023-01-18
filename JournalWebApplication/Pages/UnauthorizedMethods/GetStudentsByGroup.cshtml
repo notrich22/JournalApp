@@ -1,0 +1,46 @@
+﻿@page
+@model JournalWebApplication.Pages.UnauthorizedMethods.GetStudentsByGroupModel
+@{
+}
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="GroupId" class="control-label"></label>
+        <input asp-for="GroupId" class="form-control" />
+        <span asp-validation-for="GroupId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+@if (Model.Student != null){
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Student[0].Id)
+            </th><th>
+                @Html.DisplayNameFor(model => model.Student[0].FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student[0].StudyGroup)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Student)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td><td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudyGroup.GroupName)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}

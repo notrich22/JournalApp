@@ -35,6 +35,8 @@ namespace JournalWebApplication.Pages.NotesCRUD
             }
 
             var note =  await _context.Notes.Include(n=>n.Lesson).Include(n => n.Student).FirstOrDefaultAsync(m => m.Id == id);
+            LessonId = note.Lesson.Id;
+            StudentId = note.Student.Id;
             if (note == null)
             {
                 return NotFound();
@@ -48,10 +50,10 @@ namespace JournalWebApplication.Pages.NotesCRUD
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            /*if (!ModelState.IsValid)
             {
                 return Page();
-            }
+            }*/
 
             _context.Attach(Note).State = EntityState.Modified;
             

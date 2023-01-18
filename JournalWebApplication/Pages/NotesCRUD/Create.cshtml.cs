@@ -36,7 +36,7 @@ namespace JournalWebApplication.Pages.NotesCRUD
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Notes == null || Note == null)
+          if (_context.Notes == null || Note == null) // !ModelState.IsValid || 
             {
                 return Page();
             }
