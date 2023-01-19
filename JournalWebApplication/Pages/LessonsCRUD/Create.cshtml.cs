@@ -36,12 +36,14 @@ namespace JournalWebApplication.Pages.LessonsCRUD
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Lessons == null || Lesson == null)// 
+          if (_context.Lessons == null || Lesson == null)// !ModelState.IsValid || 
             {
                 return Page();
             }
+            
             Lesson.group = await _context.StudyGroups.FirstOrDefaultAsync(n => n.Id == StudyGroupId);
             Lesson.subject = await _context.Subjects.FirstOrDefaultAsync(n => n.Id == SubjectId);
+            Lesson.dateTime = Lesson.dateTime.ToUniversalTime();
             _context.Lessons.Add(Lesson);
             await _context.SaveChangesAsync();
 

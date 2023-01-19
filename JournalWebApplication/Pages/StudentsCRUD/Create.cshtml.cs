@@ -36,16 +36,18 @@ namespace JournalWebApplication.Pages.StudentsCRUD
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
+
           if ( _context.Students == null || Student == null) //!ModelState.IsValid ||
             {
                 return Page();
             }
+            try { 
             Student.StudyGroup = await _context.StudyGroups.FirstOrDefaultAsync(n => n.Id == StudyGroupId);
             Student.User = await _context.Users.FirstOrDefaultAsync(n => n.Id == UserId);
 
             _context.Students.Add(Student);
             await _context.SaveChangesAsync();
-
+            }catch(Exception ex) { return Page(); }
             return RedirectToPage("./Index");
         }
     }

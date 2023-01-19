@@ -12,6 +12,7 @@ namespace JournalWebApplication.Pages
 {
     public class IndexModel : PageModel
     {
+        public int Id { get; set; }
         public async Task OnGetAsync()
         {
 

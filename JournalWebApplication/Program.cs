@@ -16,7 +16,6 @@ builder.Services.AddDbContext<JournalDbContext>();
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -33,6 +32,8 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
 
 app.Run();
 

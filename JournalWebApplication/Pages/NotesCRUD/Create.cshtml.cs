@@ -36,15 +36,18 @@ namespace JournalWebApplication.Pages.NotesCRUD
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (_context.Notes == null || Note == null) // !ModelState.IsValid || 
+            //TODO: падает страница при вводе некорректного значения
+          if (_context.Notes == null || Note == null) //  !ModelState.IsValid ||  
             {
                 return Page();
             }
-            Note.Student = await _context.Students.FirstOrDefaultAsync(n=>n.Id==StudentId);
-            Note.Lesson = await _context.Lessons.FirstOrDefaultAsync(n=>n.Id==LessonId);
-            _context.Notes.Add(Note);
-            await _context.SaveChangesAsync();
-
+            try
+            {
+                Note.Student = await _context.Students.FirstOrDefaultAsync(n => n.Id == StudentId);
+                Note.Lesson = await _context.Lessons.FirstOrDefaultAsync(n => n.Id == LessonId);
+                _context.Notes.Add(Note);
+                await _context.SaveChangesAsync();
+            }catch(Exception ex) { return Page(); }
             return RedirectToPage("./Index");
         }
     }

@@ -49,11 +49,11 @@ namespace JournalWebApplication.Pages.LessonsCRUD
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            /*if (!ModelState.IsValid)
             {
                 return Page();
-            }
-
+            }*/
+            Lesson.dateTime = Lesson.dateTime.ToUniversalTime();
             _context.Attach(Lesson).State = EntityState.Modified;
 
             try
@@ -73,7 +73,6 @@ namespace JournalWebApplication.Pages.LessonsCRUD
                     throw;
                 }
             }
-
             return RedirectToPage("./Index");
         }
 

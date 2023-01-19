@@ -28,7 +28,7 @@ namespace JournalWebApplication.Pages.LessonsCRUD
                 return NotFound();
             }
 
-            var lesson = await _context.Lessons.FirstOrDefaultAsync(m => m.Id == id);
+            var lesson = await _context.Lessons.Include(n=>n.group).Include(n=>n.subject).FirstOrDefaultAsync(m => m.Id == id);
             if (lesson == null)
             {
                 return NotFound();
